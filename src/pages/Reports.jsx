@@ -91,8 +91,8 @@ export function Reports() {
         {/* Stock Summary */}
         <div>
           <div className="mb-4 sm:mb-6">
-            <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Stock Summary</h2>
-            <p className="text-xs sm:text-sm mt-1 sm:mt-2 text-gray-600">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Stock Summary</h2>
+            <p className="text-xs sm:text-sm mt-1 sm:mt-2 text-gray-600 dark:text-gray-400">
               {stockSummary.length} produce types tracked
             </p>
           </div>
@@ -139,8 +139,8 @@ export function Reports() {
         {/* Transaction History */}
         <div>
           <div className="mb-4 sm:mb-6">
-            <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Transaction History</h2>
-            <p className="text-xs sm:text-sm mt-1 sm:mt-2 text-gray-600">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Transaction History</h2>
+            <p className="text-xs sm:text-sm mt-1 sm:mt-2 text-gray-600 dark:text-gray-400">
               {transactionHistory.length} transactions recorded
             </p>
           </div>
@@ -196,8 +196,8 @@ export function Reports() {
         {/* Blockchain Ledger */}
         <div>
           <div className="mb-4 sm:mb-6">
-            <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Blockchain Ledger</h2>
-            <p className="text-xs sm:text-sm mt-1 sm:mt-2 text-gray-600">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Blockchain Ledger</h2>
+            <p className="text-xs sm:text-sm mt-1 sm:mt-2 text-gray-600 dark:text-gray-400">
               Immutable audit trail • {blockchainLedger.length} blocks
             </p>
           </div>
