@@ -110,7 +110,7 @@ export function Dispatch() {
                 required
                 value={selectedBatch}
                 onChange={(e) => setSelectedBatch(e.target.value)}
-                className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-300 text-gray-900 text-sm sm:text-base transition-all focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent"
+                className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white bg-white dark:bg-gray-700 text-sm sm:text-base transition-all focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent"
               >
                 <option value="">Choose a batch...</option>
                 {produce.map((p) => (
@@ -122,8 +122,8 @@ export function Dispatch() {
             </div>
 
             {selectedProduce && (
-              <div className="bg-green-50 border border-green-200 rounded-xl p-3 sm:p-4">
-                <p className="text-xs sm:text-sm font-semibold flex items-center gap-2 text-green-700">
+              <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800/50 rounded-xl p-3 sm:p-4">
+                <p className="text-xs sm:text-sm font-semibold flex items-center gap-2 text-green-700 dark:text-green-400">
                   <BarChart3 size={18} /> Available: <span className="text-lg font-bold">{selectedProduce.quantity} kg</span>
                 </p>
               </div>
@@ -140,7 +140,7 @@ export function Dispatch() {
                 max={selectedProduce?.quantity}
                 value={dispatchQty}
                 onChange={(e) => setDispatchQty(e.target.value)}
-                className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-300 text-gray-900 text-sm sm:text-base transition-all focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent"
+                className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white bg-white dark:bg-gray-700 text-sm sm:text-base transition-all focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent"
                 placeholder="500"
               />
             </div>
@@ -154,7 +154,7 @@ export function Dispatch() {
                 required
                 value={destination}
                 onChange={(e) => setDestination(e.target.value)}
-                className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-300 text-gray-900 text-sm sm:text-base transition-all focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent"
+                className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white bg-white dark:bg-gray-700 text-sm sm:text-base transition-all focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent"
                 placeholder="Market A, Retailer B..."
               />
             </div>
@@ -162,7 +162,7 @@ export function Dispatch() {
             <button
               type="submit"
               disabled={loading || !selectedBatch}
-              className="w-full py-2.5 sm:py-3 rounded-lg font-bold text-white text-sm sm:text-base transition-all bg-blue-600 hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full py-2.5 sm:py-3 rounded-lg font-bold text-white text-sm sm:text-base transition-all bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
             >
               {loading ? 'Processing...' : <><Truck size={18} /> Dispatch</>}
             </button>
