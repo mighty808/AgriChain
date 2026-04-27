@@ -6,7 +6,10 @@
       "Bash(npm install:*)",
       "Bash(npm run:*)",
       "Bash(netstat -ano)",
-      "Bash(pkill -f \"vite\")"
+      "Bash(pkill -f \"vite\")",
+      "Bash(grep -o \"dark:\" dist/assets/*.css)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(curl -s http://localhost:5174)"
     ]
   }
 }
