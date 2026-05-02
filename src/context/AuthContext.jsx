@@ -38,6 +38,9 @@ export function AuthProvider({ children }) {
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
+      options: {
+        emailRedirectTo: `${window.location.origin}/verify-email`,
+      },
     })
     console.log('signUp response - data:', data, 'error:', error)
     if (error) throw error
